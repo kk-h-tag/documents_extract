@@ -27,6 +27,7 @@ python main.py -i pdf_path
 ```
 - 현재 코드는 input으로 하나의 PDF 파일만 입력이 가능하며 다중파일의 처리를 원할 경우 main.py의 def main을 수정하여 처리 가능.
 - Figure와 Table은 result의 디렉터리에 저장이되며 caption과 full-text의 json 또한 result 디렉터리에 저장됨.
+- 모델의 경우 용량이 너무 커 github에 업로드를 할 수 없음.
 
 ## Todo List
 - main의 인자를 확인해 단일 파일 다중파일 관계 없이 실행 가능하도록 변경.
