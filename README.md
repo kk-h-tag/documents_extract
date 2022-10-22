@@ -1,10 +1,11 @@
 ## Project Title
-- Documents Figure Table Extraction.
+- Documents Information Extraction.
 
 ## Project Abstract
 - 논문 PDF에서 Figure, Table, Caption, 전문을 추출하기 위한 모듈.
+- 논문 PDF에서 참고문헌을 추출하기 위한 모듈.
 - 한글논문 기준이며 detectron_func/model/의 model을 영어논문에 맞는 PubLayNet과 같은 모델로 변경하시면 사용이 가능.
-- Figure, Table은 이미지의 형태로 저장이 되며, Caption은 각 Figure, Table에 맵핑이 되어 JSON으로 저장됩니다. 전문또한 JSON파일로 저장.
+- Figure, Table은 이미지의 형태로 저장이 되며, Caption은 각 Figure, Table에 맵핑이 되어 JSON으로 저장됩니다. 전문, 참고문헌 또한 JSON파일로 저장.
 
 ## Requirement
 - opencv-python == 4.1.0.25
@@ -22,6 +23,7 @@
 - Requirement 있는 package 설치(detectron2는 https://detectron2.readthedocs.io/en/latest/tutorials/install.html 참고하여 설치)
 - GPU의 메모리가 최소 12GB 이상 있어야함(pdf가 너무 클경우에 GPU 메모리에 따라 처리가 불가능 할 경우도 생김)
 - 사용 방법은 아래 명령으로 사용가능 하고, pdf 경로는 절대 경로 혹은 상대 경로 모두 사용가능.
+- 참고문헌 추출과 그림,테이블,캡션,전문 추출 모듈 모두 아래의 명령으로 사용 가능.
 ```c
 python main.py -i pdf_path
 ```
