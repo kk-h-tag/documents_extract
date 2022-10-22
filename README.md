@@ -23,14 +23,13 @@
 - Requirement 있는 package 설치(detectron2는 https://detectron2.readthedocs.io/en/latest/tutorials/install.html 참고하여 설치)
 - GPU의 메모리가 최소 12GB 이상 있어야함(pdf가 너무 클경우에 GPU 메모리에 따라 처리가 불가능 할 경우도 생김)
 - 사용 방법은 아래 명령으로 사용가능 하고, pdf 경로는 절대 경로 혹은 상대 경로 모두 사용가능.
-- 참고문헌 추출과 그림,테이블,캡션,전문 추출 모듈 모두 아래의 명령으로 사용 가능.
 ```c
 python main.py -i pdf_path
 ```
 - 현재 코드는 input으로 하나의 PDF 파일만 입력이 가능하며 다중파일의 처리를 원할 경우 main.py의 def main을 수정하여 처리 가능.
 - Figure와 Table은 result의 디렉터리에 저장이되며 caption과 full-text의 json 또한 result 디렉터리에 저장됨.
 - **모델의 경우 용량이 너무 커 github에 업로드를 할 수 없어 사용시 요청.** 
-
+- **참고문헌의 경우 Figure, Table, 캡션, 전문 추출의 모듈을 조금 변경해 사용 가능**
 ## Todo List
 - main의 인자를 확인해 단일 파일 다중파일 관계 없이 실행 가능하도록 변경.
 - 한글 논문 뿐 아니라 외국 논문까지 처리가 가능하도록 모델의 다양성 추가.
